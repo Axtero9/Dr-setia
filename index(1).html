@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Setia's Dental Centre — East Patel Nagar, Delhi | Since 2002</title>
+<meta name="description" content="Dr. Setia's Dental Centre, East Patel Nagar, Delhi. 22+ years of trusted family dentistry — implants, root canal, crowns, laser gum care & pediatric dentistry. Open Mon–Sat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-deep:#173F3B;
+    --teal-mid:#1F5751;
+    --ivory:#FAF6EE;
+    --sage:#E7EBDF;
+    --gold:#B9824A;
+    --gold-light:#D9A86C;
+    --charcoal:#262420;
+    --charcoal-soft:#54514A;
+    --line:rgba(38,36,32,0.12);
+    --white:#FFFFFF;
+    --radius:2px;
+    --shadow-soft:0 14px 40px -16px rgba(23,63,59,0.25);
+    --shadow-card:0 8px 24px -10px rgba(23,63,59,0.18);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', -apple-system, sans-serif;
+    color:var(--charcoal);
+    background:var(--ivory);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+
+  h1,h2,h3,h4{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    color:var(--teal-deep);
+    line-height:1.12;
+    letter-spacing:-0.01em;
+  }
+
+  .eyebrow{
+    font-family:'Inter', sans-serif;
+    font-size:0.72rem;
+    font-weight:600;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px; height:1px;
+    background:var(--gold);
+    display:inline-block;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ===== Skip link / focus ===== */
+  a:focus-visible, button:focus-visible, .btn:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  /* ===== Top info bar ===== */
+  .topbar{
+    background:var(--teal-deep);
+    color:rgba(255,255,255,0.85);
+    font-size:0.8rem;
+  }
+  .topbar .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:9px;
+    padding-bottom:9px;
+    gap:16px;
+  }
+  .topbar-left{display:flex; gap:22px; flex-wrap:wrap;}
+  .topbar a{color:rgba(255,255,255,0.85); transition:color .2s;}
+  .topbar a:hover{color:var(--gold-light);}
+  .topbar-item{display:inline-flex; align-items:center; gap:6px;}
+  .topbar svg{width:13px; height:13px; flex-shrink:0;}
+  .topbar-right{font-weight:500; color:var(--gold-light); white-space:nowrap;}
+
+  /* ===== Header / nav ===== */
+  header.site-header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(250,246,238,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 28px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+  .brand{
+    display:flex; align-items:center; gap:12px;
+  }
+  .brand-mark{
+    width:42px; height:42px;
+    border:1.5px solid var(--teal-deep);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.1rem;
+    color:var(--teal-deep);
+    flex-shrink:0;
+  }
+  .brand-text{display:flex; flex-direction:column; line-height:1.2;}
+  .brand-text strong{
+    font-family:'Fraunces', serif;
+    font-size:1.18rem;
+    font-weight:600;
+    color:var(--teal-deep);
+  }
+  .brand-text span{
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+
+  .nav-links{
+    display:flex; align-items:center; gap:34px;
+  }
+  .nav-links a{
+    font-size:0.92rem;
+    font-weight:500;
+    color:var(--charcoal-soft);
+    position:relative;
+    padding:4px 0;
+    transition:color .2s;
+  }
+  .nav-links a::after{
+    content:"";
+    position:absolute; left:0; bottom:-2px;
+    width:0; height:1.5px;
+    background:var(--gold);
+    transition:width .25s ease;
+  }
+  .nav-links a:hover{color:var(--teal-deep);}
+  .nav-links a:hover::after{width:100%;}
+
+  .nav-cta{
+    display:flex; align-items:center; gap:14px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:12px 26px;
+    font-size:0.88rem;
+    font-weight:600;
+    border-radius:var(--radius);
+    border:1.5px solid transparent;
+    cursor:pointer;
+    transition:all .22s ease;
+    white-space:nowrap;
+    font-family:'Inter', sans-serif;
+  }
+  .btn-primary{
+    background:var(--teal-deep);
+    color:var(--ivory);
+  }
+  .btn-primary:hover{
+    background:var(--gold);
+    transform:translateY(-1px);
+    box-shadow:var(--shadow-card);
+  }
+  .btn-outline{
+    background:transparent;
+    border-color:var(--teal-deep);
+    color:var(--teal-deep);
+  }
+  .btn-outline:hover{
+    background:var(--teal-deep);
+    color:var(--ivory);
+  }
+  .btn-gold{
+    background:var(--gold);
+    color:var(--white);
+  }
+  .btn-gold:hover{
+    background:var(--teal-deep);
+  }
+
+  .menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    background:none; border:none; cursor:pointer;
+    padding:8px;
+  }
+  .menu-toggle span{
+    width:24px; height:2px; background:var(--teal-deep); display:block; transition:.25s;
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    padding:88px 0 110px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-180px; right:-180px;
+    width:560px; height:560px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(185,130,74,0.13), transparent 70%);
+    z-index:0;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:64px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 4.2vw, 3.6rem);
+    margin:18px 0 22px;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold);
+  }
+  .hero-sub{
+    font-size:1.08rem;
+    color:var(--charcoal-soft);
+    max-width:480px;
+    margin-bottom:34px;
+  }
+  .hero-actions{
+    display:flex; gap:16px; flex-wrap:wrap; margin-bottom:42px;
+  }
+  .hero-stats{
+    display:flex;
+    gap:0;
+    border-top:1px solid var(--line);
+    padding-top:26px;
+  }
+  .hero-stat{
+    flex:1;
+    padding-right:24px;
+    border-right:1px solid var(--line);
+  }
+  .hero-stat:last-child{border-right:none;}
+  .hero-stat strong{
+    display:block;
+    font-family:'Fraunces', serif;
+    font-size:1.9rem;
+    color:var(--teal-deep);
+    font-weight:600;
+  }
+  .hero-stat span{
+    font-size:0.78rem;
+    color:var(--charcoal-soft);
+    letter-spacing:0.02em;
+  }
+
+  .hero-visual{
+    position:relative;
+  }
+  .hero-visual-frame{
+    position:relative;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+  }
+  .hero-visual-frame img{
+    width:100%;
+    height:560px;
+    object-fit:cover;
+    object-position:center 20%;
+  }
+  .hero-badge{
+    position:absolute;
+    bottom:-28px;
+    left:-28px;
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:18px 22px;
+    box-shadow:var(--shadow-card);
+    display:flex;
+    align-items:center;
+    gap:14px;
+    max-width:240px;
+  }
+  .hero-badge-icon{
+    width:40px; height:40px;
+    background:var(--sage);
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--teal-deep);
+  }
+  .hero-badge-icon svg{width:20px; height:20px;}
+  .hero-badge strong{
+    display:block;
+    font-family:'Fraunces', serif;
+    font-size:0.98rem;
+    color:var(--teal-deep);
+    font-weight:600;
+    line-height:1.25;
+  }
+  .hero-badge span{
+    font-size:0.74rem;
+    color:var(--charcoal-soft);
+  }
+
+  /* ===== Trust strip ===== */
+  .trust-strip{
+    background:var(--teal-deep);
+    padding:22px 0;
+  }
+  .trust-strip .wrap{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+    color:rgba(255,255,255,0.92);
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:10px;
+    font-size:0.86rem;
+    font-weight:500;
+  }
+  .trust-item svg{width:18px; height:18px; color:var(--gold-light); flex-shrink:0;}
+
+  /* ===== Section shared ===== */
+  section{padding:96px 0;}
+  .section-head{
+    max-width:620px;
+    margin-bottom:56px;
+  }
+  .section-head.center{
+    margin-left:auto; margin-right:auto; text-align:center;
+  }
+  .section-head h2{
+    font-size:clamp(1.9rem, 3vw, 2.5rem);
+    margin-top:14px;
+  }
+  .section-head p{
+    color:var(--charcoal-soft);
+    margin-top:16px;
+    font-size:1.02rem;
+  }
+
+  /* ===== About ===== */
+  .about{background:var(--white);}
+  .about-grid{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:70px;
+    align-items:center;
+  }
+  .about-img{
+    position:relative;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow-card);
+  }
+  .about-img img{
+    width:100%; height:520px; object-fit:cover;
+  }
+  .about-since{
+    position:absolute;
+    top:24px; right:24px;
+    background:var(--gold);
+    color:var(--white);
+    width:84px; height:84px;
+    border-radius:50%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center;
+    box-shadow:0 8px 20px -6px rgba(185,130,74,0.5);
+  }
+  .about-since strong{font-family:'Fraunces',serif; font-size:1.5rem; line-height:1;}
+  .about-since span{font-size:0.58rem; letter-spacing:0.08em; text-transform:uppercase; margin-top:2px;}
+
+  .about-content p{
+    color:var(--charcoal-soft);
+    margin-bottom:18px;
+    font-size:1.02rem;
+  }
+  .about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:28px;
+  }
+  .about-point{
+    display:flex; gap:12px; align-items:flex-start;
+    padding:16px;
+    background:var(--sage);
+    border-radius:var(--radius);
+  }
+  .about-point svg{width:20px; height:20px; color:var(--teal-deep); flex-shrink:0; margin-top:2px;}
+  .about-point strong{display:block; font-size:0.92rem; color:var(--teal-deep); margin-bottom:2px; font-family:'Inter',sans-serif; font-weight:600;}
+  .about-point p{font-size:0.84rem; margin:0; color:var(--charcoal-soft);}
+
+  /* ===== Doctors ===== */
+  .doctors{background:var(--ivory);}
+  .doctor-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+  }
+  .doctor-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow-card);
+    display:flex;
+    flex-direction:column;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .doctor-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-soft);
+  }
+  .doctor-photo{
+    height:280px;
+    background:linear-gradient(135deg, var(--teal-mid), var(--teal-deep));
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .doctor-photo svg{width:90px; height:90px; color:rgba(255,255,255,0.85);}
+  .doctor-photo .exp-tag{
+    position:absolute;
+    bottom:16px; left:16px;
+    background:rgba(255,255,255,0.95);
+    color:var(--teal-deep);
+    font-size:0.74rem;
+    font-weight:700;
+    padding:6px 14px;
+    border-radius:20px;
+  }
+  .doctor-body{padding:26px 26px 30px;}
+  .doctor-body h3{font-size:1.28rem; margin-bottom:4px;}
+  .doctor-role{
+    color:var(--gold);
+    font-size:0.84rem;
+    font-weight:600;
+    margin-bottom:14px;
+    letter-spacing:0.02em;
+  }
+  .doctor-body p{
+    color:var(--charcoal-soft);
+    font-size:0.92rem;
+    margin-bottom:16px;
+  }
+  .doctor-tags{display:flex; gap:8px; flex-wrap:wrap;}
+  .doctor-tags span{
+    font-size:0.72rem;
+    padding:5px 12px;
+    background:var(--sage);
+    color:var(--teal-deep);
+    border-radius:20px;
+    font-weight:500;
+  }
+
+  /* ===== Services ===== */
+  .services{background:var(--white);}
+  .service-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .service-card{
+    background:var(--white);
+    padding:38px 32px;
+    transition:background .25s ease;
+  }
+  .service-card:hover{background:var(--sage);}
+  .service-num{
+    font-family:'Fraunces', serif;
+    font-size:0.82rem;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:18px;
+    display:block;
+  }
+  .service-icon{
+    width:46px; height:46px;
+    border:1.5px solid var(--teal-deep);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px;
+    color:var(--teal-deep);
+  }
+  .service-icon svg{width:22px; height:22px;}
+  .service-card h3{
+    font-size:1.12rem;
+    margin-bottom:10px;
+  }
+  .service-card p{
+    font-size:0.88rem;
+    color:var(--charcoal-soft);
+  }
+
+  /* ===== Gallery / clinic tour ===== */
+  .gallery{background:var(--sage);}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    grid-template-rows:auto auto;
+    gap:18px;
+  }
+  .gallery-grid img{
+    width:100%; height:100%;
+    object-fit:cover;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow-card);
+  }
+  .gallery-item-1{grid-row:1 / 3;}
+  .gallery-item-1 img{height:100%; min-height:480px;}
+  .gallery-item-2 img, .gallery-item-3 img{height:231px;}
+  .gallery-caption{
+    margin-top:14px;
+    text-align:center;
+    color:var(--charcoal-soft);
+    font-size:0.86rem;
+    font-style:italic;
+  }
+
+  /* ===== Reviews ===== */
+  .reviews{background:var(--teal-deep); color:var(--ivory);}
+  .reviews .section-head h2{color:var(--ivory);}
+  .reviews .section-head p{color:rgba(250,246,238,0.7);}
+  .reviews .eyebrow{color:var(--gold-light);}
+  .reviews .eyebrow::before{background:var(--gold-light);}
+  .review-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:26px;
+  }
+  .review-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--radius);
+    padding:30px 26px;
+  }
+  .review-stars{display:flex; gap:3px; margin-bottom:18px;}
+  .review-stars svg{width:16px; height:16px; color:var(--gold-light);}
+  .review-card p{
+    font-size:0.94rem;
+    color:rgba(250,246,238,0.88);
+    margin-bottom:22px;
+    font-style:italic;
+  }
+  .review-author{
+    display:flex; align-items:center; gap:12px;
+    border-top:1px solid rgba(255,255,255,0.12);
+    padding-top:16px;
+  }
+  .review-avatar{
+    width:38px; height:38px;
+    border-radius:50%;
+    background:var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:0.9rem;
+    color:var(--white);
+    flex-shrink:0;
+  }
+  .review-author strong{display:block; font-size:0.88rem; font-weight:600;}
+  .review-author span{font-size:0.76rem; color:rgba(250,246,238,0.6);}
+  .review-source{
+    text-align:center;
+    margin-top:42px;
+    font-size:0.88rem;
+    color:rgba(250,246,238,0.65);
+  }
+  .review-source strong{color:var(--gold-light);}
+
+  /* ===== CTA / booking ===== */
+  .cta-section{
+    background:var(--ivory);
+  }
+  .cta-box{
+    background:linear-gradient(120deg, var(--teal-deep), var(--teal-mid));
+    border-radius:var(--radius);
+    padding:64px 56px;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:48px;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .cta-box::after{
+    content:"";
+    position:absolute;
+    bottom:-100px; right:-60px;
+    width:300px; height:300px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.1);
+  }
+  .cta-box h2{color:var(--ivory); font-size:clamp(1.7rem,2.8vw,2.2rem); margin-bottom:14px;}
+  .cta-box p{color:rgba(250,246,238,0.78); margin-bottom:0; max-width:420px;}
+  .cta-form{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:30px;
+    box-shadow:var(--shadow-soft);
+    position:relative;
+    z-index:1;
+  }
+  .cta-form h3{font-size:1.1rem; margin-bottom:18px; color:var(--teal-deep);}
+  .form-row{margin-bottom:14px;}
+  .form-row label{
+    display:block;
+    font-size:0.78rem;
+    font-weight:600;
+    color:var(--charcoal-soft);
+    margin-bottom:6px;
+  }
+  .form-row input, .form-row select, .form-row textarea{
+    width:100%;
+    padding:11px 14px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    font-family:'Inter', sans-serif;
+    font-size:0.9rem;
+    background:var(--ivory);
+    color:var(--charcoal);
+    transition:border-color .2s;
+  }
+  .form-row input:focus, .form-row select:focus, .form-row textarea:focus{
+    outline:none;
+    border-color:var(--gold);
+  }
+  .form-row textarea{resize:vertical; min-height:70px;}
+  .cta-form .btn{width:100%; margin-top:6px;}
+  .form-note{
+    font-size:0.74rem;
+    color:var(--charcoal-soft);
+    margin-top:12px;
+    text-align:center;
+  }
+
+  /* ===== FAQ ===== */
+  .faq{background:var(--white);}
+  .faq-list{max-width:760px; margin:0 auto;}
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-q{
+    width:100%;
+    background:none;
+    border:none;
+    text-align:left;
+    padding:24px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-family:'Fraunces', serif;
+    font-size:1.05rem;
+    font-weight:500;
+    color:var(--teal-deep);
+    gap:20px;
+  }
+  .faq-q .plus{
+    width:26px; height:26px;
+    border:1.5px solid var(--teal-deep);
+    border-radius:50%;
+    flex-shrink:0;
+    position:relative;
+    transition:transform .3s ease, background .3s ease;
+  }
+  .faq-q .plus::before, .faq-q .plus::after{
+    content:"";
+    position:absolute;
+    background:var(--teal-deep);
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    transition:transform .3s ease, background .3s ease;
+  }
+  .faq-q .plus::before{width:10px; height:1.5px;}
+  .faq-q .plus::after{width:1.5px; height:10px;}
+  .faq-item.active .plus{background:var(--gold); border-color:var(--gold);}
+  .faq-item.active .plus::before, .faq-item.active .plus::after{background:var(--white);}
+  .faq-item.active .plus::after{transform:translate(-50%,-50%) rotate(90deg) scaleY(0);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+  }
+  .faq-a p{
+    padding-bottom:24px;
+    color:var(--charcoal-soft);
+    font-size:0.94rem;
+    max-width:640px;
+  }
+
+  /* ===== Map / location ===== */
+  .location{background:var(--sage);}
+  .location-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:stretch;
+  }
+  .location-info{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:42px;
+    box-shadow:var(--shadow-card);
+  }
+  .location-info h3{font-size:1.3rem; margin-bottom:24px;}
+  .location-row{
+    display:flex;
+    gap:16px;
+    margin-bottom:22px;
+    align-items:flex-start;
+  }
+  .location-row svg{width:20px; height:20px; color:var(--gold); flex-shrink:0; margin-top:2px;}
+  .location-row strong{display:block; font-size:0.92rem; color:var(--teal-deep); margin-bottom:3px;}
+  .location-row span, .location-row a{font-size:0.9rem; color:var(--charcoal-soft);}
+  .location-row a:hover{color:var(--gold);}
+  .timing-table{
+    margin-top:8px;
+    width:100%;
+    border-collapse:collapse;
+  }
+  .timing-table td{
+    padding:4px 0;
+    font-size:0.88rem;
+    color:var(--charcoal-soft);
+  }
+  .timing-table td:first-child{font-weight:600; color:var(--teal-deep); width:110px;}
+  .map-embed{
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow-card);
+    min-height:380px;
+  }
+  .map-embed iframe{width:100%; height:100%; min-height:380px; border:0; display:block;}
+
+  /* ===== Footer ===== */
+  footer{
+    background:var(--charcoal);
+    color:rgba(250,246,238,0.7);
+    padding:70px 0 0;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 0.8fr 0.8fr 1fr;
+    gap:48px;
+    padding-bottom:50px;
+    border-bottom:1px solid rgba(250,246,238,0.1);
+  }
+  .footer-brand{display:flex; align-items:center; gap:12px; margin-bottom:18px;}
+  .footer-brand .brand-mark{border-color:var(--gold-light); color:var(--gold-light);}
+  .footer-brand strong{font-family:'Fraunces', serif; font-size:1.1rem; color:var(--ivory);}
+  .footer-col h4{
+    color:var(--ivory);
+    font-family:'Inter', sans-serif;
+    font-size:0.82rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-weight:600;
+  }
+  .footer-col p{font-size:0.88rem; line-height:1.7;}
+  .footer-col ul li{margin-bottom:11px;}
+  .footer-col a{font-size:0.88rem; transition:color .2s;}
+  .footer-col a:hover{color:var(--gold-light);}
+  .footer-social{display:flex; gap:12px; margin-top:18px;}
+  .footer-social a{
+    width:36px; height:36px;
+    border:1px solid rgba(250,246,238,0.2);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    transition:all .2s;
+  }
+  .footer-social a:hover{background:var(--gold); border-color:var(--gold);}
+  .footer-social svg{width:16px; height:16px;}
+  .footer-bottom{
+    padding:24px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.78rem;
+    color:rgba(250,246,238,0.45);
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ===== Floating call button (mobile) ===== */
+  .float-call{
+    position:fixed;
+    bottom:22px; right:22px;
+    z-index:200;
+    width:58px; height:58px;
+    background:var(--gold);
+    border-radius:50%;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 30px -8px rgba(185,130,74,0.6);
+    animation:pulse 2.4s infinite;
+  }
+  .float-call svg{width:24px; height:24px; color:var(--white);}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(185,130,74,0.5);}
+    70%{box-shadow:0 0 0 14px rgba(185,130,74,0);}
+    100%{box-shadow:0 0 0 0 rgba(185,130,74,0);}
+  }
+
+  /* ===== Scroll reveal ===== */
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .7s ease, transform .7s ease;
+  }
+  .reveal.in{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .reveal{opacity:1; transform:none;}
+  }
+
+  /* ===================== RESPONSIVE ===================== */
+  @media (max-width:1024px){
+    .hero-grid{grid-template-columns:1fr; gap:48px;}
+    .hero-visual-frame img{height:420px;}
+    .about-grid{grid-template-columns:1fr; gap:40px;}
+    .about-img img{height:380px;}
+    .doctor-grid{grid-template-columns:1fr; max-width:480px; margin:0 auto;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    .review-grid{grid-template-columns:1fr; max-width:520px; margin:0 auto;}
+    .cta-box{grid-template-columns:1fr; padding:48px 32px;}
+    .location-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr; gap:36px;}
+  }
+
+  @media (max-width:768px){
+    .topbar .wrap{font-size:0.72rem; flex-direction:column; gap:6px; padding:8px 20px;}
+    .topbar-left{gap:14px;}
+    .nav{padding:14px 20px;}
+    .nav-links{
+      position:fixed;
+      top:0; right:0;
+      height:100vh;
+      width:78%;
+      max-width:320px;
+      background:var(--ivory);
+      flex-direction:column;
+      align-items:flex-start;
+      padding:100px 32px 32px;
+      gap:26px;
+      box-shadow:-10px 0 40px rgba(0,0,0,0.15);
+      transform:translateX(100%);
+      transition:transform .35s ease;
+      z-index:99;
+    }
+    .nav-links.open{transform:translateX(0);}
+    .nav-links a{font-size:1.05rem;}
+    .menu-toggle{display:flex;}
+    .nav-cta .btn-outline{display:none;}
+    .nav-cta{gap:8px;}
+
+    .hero{padding:48px 0 70px;}
+    .hero-actions{flex-direction:column;}
+    .hero-actions .btn{width:100%;}
+    .hero-stats{flex-direction:column; gap:18px;}
+    .hero-stat{border-right:none; border-bottom:1px solid var(--line); padding-bottom:18px; padding-right:0;}
+    .hero-stat:last-child{border-bottom:none; padding-bottom:0;}
+    .hero-visual-frame img{height:300px;}
+    .hero-badge{
+      position:static;
+      margin-top:-40px;
+      margin-left:16px;
+      max-width:none;
+      width:calc(100% - 32px);
+    }
+
+    .trust-strip .wrap{flex-direction:column; align-items:flex-start; gap:14px;}
+
+    section{padding:64px 0;}
+    .section-head{margin-bottom:36px;}
+
+    .about-points{grid-template-columns:1fr;}
+    .about-since{width:68px; height:68px; top:16px; right:16px;}
+    .about-since strong{font-size:1.2rem;}
+
+    .service-grid{grid-template-columns:1fr;}
+    .service-card{padding:30px 24px;}
+
+    .gallery-grid{grid-template-columns:1fr 1fr; grid-template-rows:auto;}
+    .gallery-item-1{grid-row:auto; grid-column:1 / 3;}
+    .gallery-item-1 img{min-height:240px; height:240px;}
+    .gallery-item-2 img, .gallery-item-3 img{height:180px;}
+
+    .cta-box{padding:36px 22px;}
+    .cta-form{padding:22px;}
+
+    .footer-grid{grid-template-columns:1fr; gap:32px; padding-bottom:36px;}
+    .footer-bottom{flex-direction:column; text-align:center;}
+
+    .float-call{display:flex;}
+  }
+
+  @media (max-width:420px){
+    .wrap{padding:0 18px;}
+    .hero h1{font-size:2rem;}
+    .doctor-photo{height:220px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 011 .76l1.12 4.49a1 1 0 01-.54 1.13l-2.1 1.05a11.5 11.5 0 005.69 5.69l1.05-2.1a1 1 0 011.13-.54l4.49 1.12a1 1 0 01.76 1V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z"/></svg>
+        +91 98XXX XXXXX
+      </span>
+      <span class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        26/35, East Patel Nagar, Delhi-110008
+      </span>
+    </div>
+    <div class="topbar-right">Mon–Sat · 10AM–1PM &amp; 5PM–8PM</div>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">DS</span>
+      <span class="brand-text">
+        <strong>Dr. Setia's</strong>
+        <span>Dental Centre</span>
+      </span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link-item">About</a></li>
+      <li><a href="#doctors" class="nav-link-item">Doctors</a></li>
+      <li><a href="#services" class="nav-link-item">Treatments</a></li>
+      <li><a href="#gallery" class="nav-link-item">Clinic Tour</a></li>
+      <li><a href="#reviews" class="nav-link-item">Reviews</a></li>
+      <li><a href="#location" class="nav-link-item">Visit Us</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="tel:+919800000000" class="btn btn-outline">Call Now</a>
+      <a href="#book" class="btn btn-primary">Book Visit</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal in">
+        <p class="eyebrow">Trusted in East Patel Nagar since 2002</p>
+        <h1>Dentistry that feels like <em>family.</em></h1>
+        <p class="hero-sub">For over two decades, Dr. Sumeet Setia and Dr. Ritu Setia have cared for generations of families in Patel Nagar — combining modern technique with the kind of attention that only comes from running a true neighbourhood practice.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn btn-primary">Book an Appointment</a>
+          <a href="tel:+919800000000" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 011 .76l1.12 4.49a1 1 0 01-.54 1.13l-2.1 1.05a11.5 11.5 0 005.69 5.69l1.05-2.1a1 1 0 011.13-.54l4.49 1.12a1 1 0 01.76 1V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z"/></svg>
+            Call the Clinic
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>22+</strong>
+            <span>Years of practice</span>
+          </div>
+          <div class="hero-stat">
+            <strong>4.9 ★</strong>
+            <span>Patient rating, 248+ reviews</span>
+          </div>
+          <div class="hero-stat">
+            <strong>2</strong>
+            <span>Resident dental surgeons</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal in">
+        <div class="hero-visual-frame">
+          <img src="images/hero-treatment.png" alt="Dr. Sumeet Setia treating a young patient at Dr. Setia's Dental Centre">
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </span>
+          <span>
+            <strong>Gentle with kids</strong>
+            <span>A calm chairside manner, even for nervous first-timers</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="trust-strip">
+    <div class="wrap">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v6c0 5.25 3.75 9.5 9 10 5.25-.5 9-4.75 9-10V7l-9-5z"/></svg>
+        Established 2002
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+        BDS Qualified Dentists
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Sterile, Modern Equipment
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 11-16 0 8 8 0 0116 0z"/><path d="M12 8v4l3 2"/></svg>
+        Open 6 Days a Week
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-img reveal">
+        <img src="images/interior-2.png" alt="Reception and waiting lounge at Dr. Setia's Dental Centre">
+        <div class="about-since">
+          <strong>2002</strong>
+          <span>Founded</span>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>A Patel Nagar practice, built one patient at a time.</h2>
+        <p>Dr. Setia's Dental Centre opened its doors in 2002 with a simple idea: dental care should feel personal, not clinical. More than two decades later, that hasn't changed — many of our patients are now bringing in their own children for checkups.</p>
+        <p>The clinic is led by Dr. Sumeet Setia, an implantologist with 22 years of experience, alongside Dr. Ritu Verma Setia, a general dentist with 17 years in practice. Together they've built a calm, well-equipped space just off East Patel Nagar's main road, near Hotel Siddharth.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z"/><path d="M12 14c-5 0-8 2.5-8 6h16c0-3.5-3-6-8-6z"/></svg>
+            <p><strong>Family-run care</strong>Two doctors, one consistent standard, no rotating staff.</p>
+          </div>
+          <div class="about-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            <p><strong>Comfortable space</strong>A quiet waiting lounge with seating away from the chair.</p>
+          </div>
+          <div class="about-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+            <p><strong>Full-spectrum care</strong>From routine fillings to implants under one roof.</p>
+          </div>
+          <div class="about-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+            <p><strong>Transparent fees</strong>Straightforward, upfront pricing before any treatment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOCTORS ============ -->
+  <section class="doctors" id="doctors">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Meet the Team</p>
+        <h2>The hands you can trust</h2>
+        <p>Both resident doctors are BDS-qualified and have practiced together at this clinic for over a decade.</p>
+      </div>
+      <div class="doctor-grid">
+        <div class="doctor-card reveal">
+          <div class="doctor-photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <span class="exp-tag">22 years experience</span>
+          </div>
+          <div class="doctor-body">
+            <h3>Dr. Sumeet Setia</h3>
+            <p class="doctor-role">BDS · Dental Surgeon &amp; Implantologist</p>
+            <p>Leads the clinic's implant and surgical cases, with two decades of hands-on experience treating patients of every age across East Patel Nagar.</p>
+            <div class="doctor-tags">
+              <span>Dental Implants</span>
+              <span>Oral Surgery</span>
+              <span>Root Canal</span>
+            </div>
+          </div>
+        </div>
+        <div class="doctor-card reveal">
+          <div class="doctor-photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <span class="exp-tag">17 years experience</span>
+          </div>
+          <div class="doctor-body">
+            <h3>Dr. Ritu Verma Setia</h3>
+            <p class="doctor-role">BDS · General Dentist</p>
+            <p>Focuses on preventive and family dentistry — routine checkups, fillings, and pediatric care, with a gentle approach that's especially good with younger patients.</p>
+            <div class="doctor-tags">
+              <span>Pediatric Dentistry</span>
+              <span>Fillings</span>
+              <span>Preventive Care</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Treatments</p>
+        <h2>Care for every stage of your smile</h2>
+        <p>From a routine cleaning to a full implant, every treatment is explained in plain terms before we begin.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="service-grid reveal">
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a5 5 0 00-5 5c0 1.5.5 2 1 4l1 9 1.5-6h3L15 20l1-9c.5-2 1-2.5 1-4a5 5 0 00-5-5z"/></svg>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent, natural-looking replacements for missing teeth, planned and placed by our implantologist.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+          </div>
+          <h3>Root Canal Treatment</h3>
+          <p>Pain-relieving RCT to save infected or badly decayed teeth, done with minimal discomfort.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9.5C7.5 20.5 4 17 4 12V7l8-4z"/></svg>
+          </div>
+          <h3>Crowns &amp; Bridges</h3>
+          <p>Durable restorations that rebuild strength and appearance for damaged or missing teeth.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+          </div>
+          <h3>Laser Gum Surgery</h3>
+          <p>Precise, minimally invasive treatment for gum disease with faster healing than traditional methods.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">05</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H8l-4 4V4z"/></svg>
+          </div>
+          <h3>Laminates &amp; Veneers</h3>
+          <p>Thin, custom-fitted shells that correct chips, gaps, and discolouration for a brighter smile.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">06</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.33 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.33 1.7 1.7 0 00-1.03 1.56V21a2 2 0 01-4 0v-.09A1.7 1.7 0 008.97 19.4a1.7 1.7 0 00-1.87.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.33-1.87 1.7 1.7 0 00-1.56-1.03H3a2 2 0 010-4h.09A1.7 1.7 0 004.6 8.97a1.7 1.7 0 00-.33-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.33H9a1.7 1.7 0 001.03-1.56V3a2 2 0 014 0v.09a1.7 1.7 0 001.03 1.56 1.7 1.7 0 001.87-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.33 1.87V9a1.7 1.7 0 001.56 1.03H21a2 2 0 010 4h-.09a1.7 1.7 0 00-1.56 1.03z"/></svg>
+          </div>
+          <h3>Pediatric Dentistry</h3>
+          <p>A patient, kid-friendly approach to checkups, fillings and early orthodontic guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY / CLINIC TOUR ============ -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Step Inside</p>
+        <h2>A clinic that doesn't feel like one</h2>
+        <p>Bright, marble-floored interiors with a dedicated waiting lounge — designed so a dental visit feels less clinical.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item-1">
+          <img src="images/interior-1.png" alt="Reception desk and lounge seating at Dr. Setia's Dental Centre">
+        </div>
+        <div class="gallery-item-2">
+          <img src="images/interior-2.png" alt="Waiting area with sofas and reading material">
+        </div>
+        <div class="gallery-item-3">
+          <img src="images/hero-treatment.png" alt="Treatment in progress in the operatory">
+        </div>
+      </div>
+      <p class="gallery-caption">Our East Patel Nagar clinic — reception, lounge, and treatment room.</p>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Patient Stories</p>
+        <h2>What Patel Nagar families say</h2>
+      </div>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+          </div>
+          <p>"Dr. Sumeet Setia is highly professional, polite, and dedicated. The staff is friendly and the clinic is well-equipped with the latest technology."</p>
+          <div class="review-author">
+            <span class="review-avatar">A</span>
+            <span><strong>Anita K.</strong><span>Google Review</span></span>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+          </div>
+          <p>"Myself and my family have been regular visitors for years. Dr Sumeet Setia is highly competent and his charges are reasonable and justifiable."</p>
+          <div class="review-author">
+            <span class="review-avatar">R</span>
+            <span><strong>Rohit M.</strong><span>Practo Review</span></span>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1L12 2z"/></svg>
+          </div>
+          <p>"No significant dislikes — the waiting lounge is comfortable and the doctors explain every step of the treatment clearly before starting."</p>
+          <div class="review-author">
+            <span class="review-avatar">S</span>
+            <span><strong>Simran B.</strong><span>Justdial Review</span></span>
+          </div>
+        </div>
+      </div>
+      <p class="review-source">Rated <strong>4.9 / 5</strong> on Justdial (248+ reviews) and <strong>4.3 / 5</strong> on Lybrate.</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA / BOOKING FORM ============ -->
+  <section class="cta-section" id="book">
+    <div class="wrap">
+      <div class="cta-box">
+        <div class="reveal">
+          <p class="eyebrow" style="color:var(--gold-light);">Book a Visit</p>
+          <h2>Let's take care of that tooth.</h2>
+          <p>Tell us a little about what's bothering you and a good time to come in — we'll call to confirm your slot, usually within the same day.</p>
+        </div>
+        <form class="cta-form reveal" id="bookingForm">
+          <h3>Request an Appointment</h3>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-row">
+            <label for="treatment">Concern / treatment</label>
+            <select id="treatment" name="treatment">
+              <option>General Checkup</option>
+              <option>Tooth Pain / RCT</option>
+              <option>Dental Implant</option>
+              <option>Crowns &amp; Bridges</option>
+              <option>Child's Dental Visit</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="msg">Preferred day &amp; time</label>
+            <textarea id="msg" name="msg" placeholder="E.g. Saturday evening"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Request Appointment</button>
+          <p class="form-note">We'll call you back to confirm — no payment needed online.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Good to Know</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item active">
+          <button class="faq-q">
+            What are your clinic timings?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-a" style="max-height:140px;">
+            <p>We're open Monday to Saturday, 10:00 AM – 1:00 PM and 5:00 PM – 8:00 PM. We're closed on Sundays. It's best to call ahead, as slots can fill up in the evening.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Do I need an appointment, or can I walk in?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-a">
+            <p>Walk-ins are welcome, but we recommend booking ahead — especially for implants, RCT, or other longer procedures — so we can set aside enough chair time for you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Is the clinic suitable for children?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-a">
+            <p>Yes — Dr. Ritu Setia regularly treats young patients, and the clinic's calm, unhurried approach is built around making first visits comfortable rather than stressful.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What payment methods do you accept?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-a">
+            <p>We currently accept cash payments at the clinic. Please speak to our front desk if you have questions about treatment costs before booking.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Where exactly is the clinic located?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-a">
+            <p>We're at 26/35, East Patel Nagar, near Hotel Siddharth and Subway Restaurant, Delhi-110008 — a short walk from Patel Nagar metro station.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section class="location" id="location">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Find your way to the chair</h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-info reveal">
+          <h3>Clinic Details</h3>
+          <div class="location-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>
+              <strong>Address</strong>
+              <span>26/35, East Patel Nagar, Near Hotel Siddharth &amp; Subway Restaurant, New Delhi – 110008</span>
+            </span>
+          </div>
+          <div class="location-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 011 .76l1.12 4.49a1 1 0 01-.54 1.13l-2.1 1.05a11.5 11.5 0 005.69 5.69l1.05-2.1a1 1 0 011.13-.54l4.49 1.12a1 1 0 01.76 1V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z"/></svg>
+            <span>
+              <strong>Phone</strong>
+              <a href="tel:+919800000000">+91 98XXX XXXXX</a>
+            </span>
+          </div>
+          <div class="location-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <span>
+              <strong>Email</strong>
+              <a href="mailto:info@drsetiadental.com">info@drsetiadental.com</a>
+            </span>
+          </div>
+          <div class="location-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <span>
+              <strong>Clinic Hours</strong>
+              <table class="timing-table">
+                <tr><td>Mon – Sat</td><td>10:00 AM – 1:00 PM</td></tr>
+                <tr><td></td><td>5:00 PM – 8:00 PM</td></tr>
+                <tr><td>Sunday</td><td>Closed</td></tr>
+              </table>
+            </span>
+          </div>
+        </div>
+        <div class="map-embed reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Dr.Setia%27s%20Dental%20Centre%2C%2026%2F35%20East%20Patel%20Nagar%2C%20New%20Delhi&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Dr. Setia's Dental Centre">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="brand-mark">DS</span>
+          <strong>Dr. Setia's Dental Centre</strong>
+        </div>
+        <p>A family dental practice in East Patel Nagar, Delhi, providing complete oral care since 2002.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-12.45 7.55L3 20l1.05-5.4A8.5 8.5 0 1121 11.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#services">Treatments</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Crowns &amp; Bridges</a></li>
+          <li><a href="#services">Pediatric Dentistry</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>26/35, East Patel Nagar,<br>Near Hotel Siddharth, Delhi – 110008</p>
+        <p style="margin-top:10px;">+91 98XXX XXXXX<br>info@drsetiadental.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dr. Setia's Dental Centre. All rights reserved.</span>
+      <span>Designed &amp; built locally in Delhi.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING CALL BUTTON ============ -->
+<a href="tel:+919800000000" class="float-call" aria-label="Call the clinic">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 011 .76l1.12 4.49a1 1 0 01-.54 1.13l-2.1 1.05a11.5 11.5 0 005.69 5.69l1.05-2.1a1 1 0 011.13-.54l4.49 1.12a1 1 0 01.76 1V19a2 2 0 01-2 2h-1C9.16 21 3 14.84 3 7V5z"/></svg>
+</a>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    const expanded = navLinks.classList.contains('open');
+    menuToggle.setAttribute('aria-expanded', expanded);
+  });
+  document.querySelectorAll('.nav-link-item').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isActive) {
+        item.classList.add('active');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Booking form (demo — no backend)
+  document.getElementById('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.textContent;
+    btn.textContent = 'Request Sent ✓';
+    btn.style.background = '#173F3B';
+    this.reset();
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.style.background = '';
+    }, 2600);
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Sticky header shadow on scroll
+  const header = document.querySelector('.site-header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      header.style.boxShadow = '0 4px 20px rgba(23,63,59,0.08)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
